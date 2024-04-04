@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvey From</title>
+    <style>
+        h2 {
+            font-size: 30px;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: gray;
+            height: 100px;
+            padding-top: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-title {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-login {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        .admin-login {
+            padding-right: 20px;
+        }
+
+        .admin-login img {
+            width: 70px;
+            height: 70px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main-div {
+            width: 60%;
+            background-color: #1b1b49;
+            color: white;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 20%;
+            margin-right: 20%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        label {
+            font-size: 30px;
+        }
+        #submit{
+            background-color: green ;
+            color: white;
+            width: 100px;
+            height: 50px;
+            font-size: 25px;
+            border-radius: 30px;
+        }
+        #form textarea{
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-title">
+            <div class="title">
+                <h2>Student Survey</h2>
+            </div>
+        </div>
+        <div class="nav-login">
+            <a href="adminlogin.html">
+                <div class="admin-login">
+                    <img src="admin img.jpg" alt="Admin login">
+                    <br>
+                    <span style="font-size: large; margin-right: 10px">Admin login</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main-div">
+        
+     <form action="form.php" method="post" id="form">
+            <label for="fname">First Name : </label>
+            <input type="text" name="fname" placeholder="Enter Frist Name" required>
+            <br>
+            <br>
+            <label for="lname">Last Name : </label>
+            <input type="text" name="lname" placeholder="Enter Last Name" required>
+            <br>
+            <br>
+            <label for="mail">Email Adress : </label>
+            <input type="email" name="email" placeholder="Enter Email Adress" required>
+            <br>
+            <br>
+            <label for="mob-num">Mobile Number : </label>
+            <input type="number" name="mob_num" maxlength="10" minlength="10" required>
+            <br>
+            <br>
+            <label for="city">City : </label>
+            <input type="text" name="city" placeholder="Enter" required>
+            <br>
+            <br>
+            <label for="district">District : </label>
+            <input type="text" name="district" placeholder="Enter" required>
+            <br><br>
+            <label for="dob">Date Of Birth : </label>
+            <input type="date" name="dob" required>
+            <br>
+            <br>
+            <label for="gender">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+            <input type="radio" name="gender" value="Male" required>
+            <span style="font-size: 20px;">Male</span>
+            <input type="radio" name="gender" value="Female" required>
+            <span style="font-size: 20px;">Female</span>
+            <input type="radio" name="gender" value="Others" required>
+            <span style="font-size: 20px;">Others</span>
+            <br>
+            <br>
+            <label for="education">Qualification : </label>
+            <select name="qualification" required>
+                <option value="SSLC">10th Compeleted</option>
+                <option value="HSC">12th Compeleted</option>
+                <option value="Doing_UG">Currently doing a UG Degree</option>
+                <option value="Compeleted_UG">Compeleted UG Degree</option>
+                <option value="Doing_PG">Currently doing a PG Degree</option>
+                <option value="Compeleted_PG">Compeleted PG Degree</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Last studied in : </label>
+            <input type="text" name="lstudy" placeholder="Enter" required>
+            <br>
+            <br>
+            <label for="interested">Do you interested In ? </label>
+            <select name="interested" required>
+                <option value="Drawing">Drawing</option>
+                <option value="Music">Music</option>
+                <option value="writting">writting</option>
+                <option value="Photography">Photography</option>
+                <option value="Travelling">Travelling</option>
+                <option value="Sports">Sports</option>
+                <option value="Cinema">Cinema</option>
+            </select>
+            <br>
+            <br>  
+            <label for="interested_programing">Interested in Programing : </label>
+            <input type="radio" name="interested_programing" value="Yes" required>
+            <span style="font-size: 20px;">Yes</span>
+            <input type="radio" name="interested_programing" value="No" required>
+            <span style="font-size: 20px;">No</span>
+            <br>
+            <br> 
+            <label for="aim">Your aim : </label>
+            <input type="text" name="aim" placeholder="Enter" required>
+            <br>
+            <br>
+            <label for="comment">Any coments or Susggestion ?</label>
+            <br>
+            <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Enter your comment"></textarea>
+            <br>
+            <br>
+            <br>
+            <center>   <input type="submit" id="submit"> </center>
+        </form>
+    </div>
+
+</body>
+
+</html>
