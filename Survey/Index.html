@@ -83,9 +83,9 @@
             </div>
         </div>
         <div class="nav-login">
-            <a href="adminlogin.html">
+            <a href="backend/adminlogin.html">
                 <div class="admin-login">
-                    <img src="admin img.jpg" alt="Admin login">
+                    <img src="Images/admin img.jpg" alt="Admin login">
                     <br>
                     <span style="font-size: large; margin-right: 10px">Admin login</span>
                 </div>
@@ -94,7 +94,7 @@
     </div>
     <div class="main-div">
         
-     <form action="form.php" method="post" id="form">
+     <form action="backend/form.php" method="post" id="form">
             <label for="fname">First Name : </label>
             <input type="text" name="fname" placeholder="Enter Frist Name" required>
             <br>
@@ -108,7 +108,7 @@
             <br>
             <br>
             <label for="mob-num">Mobile Number : </label>
-            <input type="number" name="mob_num" maxlength="10" minlength="10" required>
+            <input type="tel" pattern="['0-9']{10}" name="mob_num" maxlength="10" required>
             <br>
             <br>
             <label for="city">City : </label>
